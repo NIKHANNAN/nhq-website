@@ -1,0 +1,95 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hannan's Website</title>
+    <link href="video/bow-pink.gif" rel="icon">
+    <style>
+        body {
+            background-image: url('image/pinkwallpaper.jpg');
+        
+        }
+
+        .container {
+            background-color: rgba(255, 192, 203, 0);
+            border: 5px solid white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto; /* Center the container horizontally */
+            position: relative;
+
+        }
+
+        /* Style for the links in the top navigation bar */
+        .topnav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid transparent; /* Add transparent border */
+            border-radius: 20px; /* Rounded corners */
+        }
+
+        /* Hover effect for the links */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            border-color: #333; /* Change border color on hover */
+        }
+
+        /* Style for the active link */
+        .topnav a.active {
+            background-color: #ed7ba5;
+        }
+
+        /* Moving text animation */
+        @keyframes moveText {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .moving-text {
+            position: absolute;
+            top: 50%;
+            left: -100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: moveText 30s linear infinite;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <!-- Audio player -->
+    <audio hidden="true" controls autoplay>
+        <source type="audio/mp3" src="audio/10 MONTHS.mp3">
+    </audio>
+
+    <!-- Top navigation bar -->
+    <div class="topnav">
+        <a class="active" href="#">Home</a> <!-- Active link for the current page -->
+        <a href="biodata.html">My Biodata</a>
+        <a href="contact.html">Contact Info</a>
+        <a href="media.html">My Media</a>
+    </div>
+
+    <!-- Container for main content -->
+    <div class="container">
+        <b>WELCOME TO HANNAN'S WEBSITE</b>
+        <br><img src="image/me.jpg" alt="my shadow" height="250" hspace="10" vspace="10" style="border: 3px solid white;">
+        <p>Welcome to my website! I'm so excited to share a bit about myself with you all! Feel free to explore and get to know me better...</p>
+        ⋆˙⟡ My name is Nik Hannan Qistina. Just call me <font color="purple">Hannan~</font> for short.
+        <br>
+        ⋆˙⟡ I am going to be <b>21 years old</b> on <i>August 30th</i>!
+        <br>
+        ⋆˙⟡ There are links to other sites where you'll find my biodata, contact information, and a gallery showing my interests on the top navigation!
+        <br><br>
+    </div>
+
+    <!-- Moving text -->
+    <div class="moving-text">Now playing: 10 Months by ENHYPEN (Instrumental ver.) </div>
+</body>
+</html>

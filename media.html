@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="video/bow-pink.gif" rel="icon">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            background-image: url('image/pinkwallpaper.jpg');
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif; /* Setting font to Times New Roman */
+        }
+
+        .container {
+            background-color: rgba(255, 192, 203, 0);
+            border: 5px solid white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        /* Style for the links in the top navigation bar */
+        .topnav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: 20px;
+        }
+
+        /* Hover effect for the links */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            border-color: #333;
+        }
+
+        /* Style for the active link */
+        .topnav a.active {
+            background-color: #ed7ba5;
+        }
+
+        /* Moving text animation */
+        @keyframes moveText {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .moving-text {
+            position: absolute;
+            top: 0%;
+            left: -100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: moveText 30s linear infinite;
+        }
+
+        table, td, tr, th {
+            border: 1px solid #ed7ba5;
+            border-collapse: collapse;
+        }
+        
+        td, h2 {
+            text-align: center;
+        }
+
+        /* Container for the Swipers */
+        .swipers-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the Swipers */
+            margin: 40px 0;
+        }
+
+        /* Swiper Styles */
+        .swiper {
+            width: 100%;
+            max-width: 280px; /* Adjust the width to make them smaller */
+            height: 280px; /* Adjust the height accordingly */
+            overflow: hidden;
+            border-radius: 10px; /* Rounded corners for Swipers */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+
+<body bgcolor="pink">
+
+    <!-- Top navigation bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="biodata.html">My Biodata</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="#">My Media</a> <!-- Active link for the current page -->
+    </div>
+
+    <!-- Container for main content -->
+    <div class="container">
+        <h1 align="center">Here's one of the things that I Like <3</h1>
+    </div>
+    <hr size="3" color="#ed7ba5">
+
+    <!-- Swipers Container -->
+    <div class="swipers-container">
+        <!-- firsttttt Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Swiper Slides with Images -->
+                <div class="swiper-slide"><img src="image/tomorrow.jpg" alt="Slide 1"></div>
+                <div class="swiper-slide"><img src="image/gidle.jpg" alt="Slide 2"></div>
+                <div class="swiper-slide"><img src="image/tomorrow2.jpg" alt="Slide 3"></div>
+                <div class="swiper-slide"><img src="image/ksana.jpg" alt="Slide 4"></div>
+                <div class="swiper-slide"><img src="image/collection1.jpg" alt="Slide 5"></div>
+                <div class="swiper-slide"><img src="image/ob.jpg" alt="Slide 6"></div>
+                <div class="swiper-slide"><img src="image/collection.jpg" alt="Slide 7"></div>
+
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- seconddddddd Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Swiper Slides with Images -->
+                <div class="swiper-slide"><img src="image/bnm1.JPG" alt="Slide 8"></div>
+                <div class="swiper-slide"><img src="image/arkib.JPG" alt="Slide 9"></div>
+                <div class="swiper-slide"><img src="image/arkib2.JPG" alt="Slide 10"></div>
+                <div class="swiper-slide"><img src="image/arkib3.JPG" alt="Slide 11"></div>
+                <div class="swiper-slide"><img src="image/beach.JPG" alt="Slide 12"></div>
+                <div class="swiper-slide"><img src="image/girlies.jpg" alt="Slide 13"></div>
+                <div class="swiper-slide"><img src="image/girlies3.jpg" alt="Slide 14"></div>
+                <div class="swiper-slide"><img src="image/trio.jpg" alt="Slide 15"></div>
+                <div class="swiper-slide"><img src="image/girlies2.jpg" alt="Slide 16"></div>
+                <div class="swiper-slide"><img src="image/girlies1.jpg" alt="Slide 17"></div>
+                <div class="swiper-slide"><img src="image/bday.JPG" alt="Slide 18"></div>
+                <div class="swiper-slide"><img src="image/publisiti 3.JPG" alt="Slide 19"></div>
+                <div class="swiper-slide"><img src="image/bnm3.JPG" alt="Slide 20"></div>
+            
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- thirddddd Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Swiper Slides with Images -->
+                <div class="swiper-slide"><img src="image/random.jpg" alt="Slide 21"></div>
+                <div class="swiper-slide"><img src="image/me2.jpg" alt="Slide 22"></div>
+                <div class="swiper-slide"><img src="image/random2.jpg" alt="Slide 23"></div>
+                <div class="swiper-slide"><img src="image/intern3.jpg" alt="Slide 24"></div>
+                <div class="swiper-slide"><img src="image/intern2.jpg" alt="Slide 25"></div>
+                <div class="swiper-slide"><img src="image/day1intern.jpg" alt="Slide 26"></div>
+                <div class="swiper-slide"><img src="image/daylastintern.jpg" alt="Slide 27"></div>
+                <div class="swiper-slide"><img src="image/me4.jpg" alt="Slide 28"></div>
+                <div class="swiper-slide"><img src="image/tom.jpg" alt="Slide 29"></div>
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <hr size="3" color="#ed7ba5">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swipers -->
+    <script>
+        // Initialize the first Swiper
+        const swiper1 = new Swiper('.swiper:first-of-type', {
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Initialize the second Swiper
+        const swiper2 = new Swiper('.swiper:nth-of-type(2)', {
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Initialize the third Swiper
+        const swiper3 = new Swiper('.swiper:nth-of-type(3)', {
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <table style="width:70%;" align="center" cellspacing="7" cellpadding="4">
+        <h2>My Favourite Songs!</h2>
+        <tr>
+            <th>Song Title</th>
+            <th>By</th>
+            <th>Audio</th>
+        </tr>
+        <tr>
+            <td>Blockbuster</td>
+            <td>ENHYPEN ft. YEONJUN of TXT</td>
+            <td><audio controls><source src="audio/Blockbuster.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Love for me</td>
+            <td>LOVELI LORI</td>
+            <td><audio controls><source src="audio/Love For You.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Miracle</td>
+            <td>TXT</td>
+            <td><audio controls><source src="audio/Miracle.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Fire Meet Gasoline</td>
+            <td>Sia</td>
+            <td><audio controls><source src="audio/Fire Meet Gasoline.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Break Free</td>
+            <td>Ariana Grande, Zedd</td>
+            <td><audio controls><source src="audio/Break Free.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Akhir Cerita</td>
+            <td>Aziz Harun, Dalia Farhana</td>
+            <td><audio controls><source src="audio/Akhir Cerita.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Moth To A Flame</td>
+            <td>The Weeknd</td>
+            <td><audio controls><source src="audio/Moth To A Flame.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Palace</td>
+            <td>BROCKHAMPTON</td>
+            <td><audio controls><source src="audio/PALACE.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>One & Only</td>
+            <td>ENHYPEN</td>
+            <td><audio controls><source src="audio/One & Only.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Flames</td>
+            <td>David Guetta, Sia</td>
+            <td><audio controls><source src="audio/Flames.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>I Like Me Better</td>
+            <td>Lauv</td>
+            <td><audio controls><source src="audio/I like me better.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>DAHLIA</td>
+            <td>(G)I-DLE</td>
+            <td><audio controls><source src="audio/DAHLIA.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>Baby Bull (unreleased)</td>
+            <td>BROCKHAMPTON</td>
+            <td><audio controls><source src="audio/Baby Bull.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td>sdp interlude</td>
+            <td>Travis Scott</td>
+            <td><audio controls><source src="audio/SDP Interlude.mp3" type="audio/mp3"></audio></td>
+        </tr>
+    </table>
+</body>
+
+</html>
